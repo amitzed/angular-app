@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { MdButtonModule, MdCardModule, MdToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -16,9 +16,9 @@ import { PageComponent } from './page/page.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdCardModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

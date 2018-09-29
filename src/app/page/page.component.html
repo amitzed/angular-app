@@ -1,3 +1,16 @@
-<p>
-  page works!
-</p>
+<img class="mainImg" fullpage [src]="page.image">
+
+<mat-card>
+
+	<mat-card-header>
+
+		<mat-card-title><h1>{{page.title}}</h1></mat-card-title>
+		<mat-card-subtitle>{{page.subtitle}}</mat-card-subtitle>
+    
+	</mat-card-header>
+
+	<mat-card-content>
+		{{page.content}}
+	</mat-card-content>
+
+</mat-card>
