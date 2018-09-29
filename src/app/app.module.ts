@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { PageComponent } from './page/page.component';
-import { ContentService } from './shared/services/content.service';
 import { AppRoutingModule } from './app-routing.module';
+import { ContentService } from './shared/services/content.service';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,12 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule,
-    AppRoutingModule
+    MatCardModule
+
   ],
   providers: [ContentService],
   bootstrap: [AppComponent]

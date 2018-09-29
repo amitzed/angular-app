@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentService } from '../shared/services/content.service';
 import { ActivatedRoute } from '@angular/router';
+import { ContentService } from '../shared/services/content.service';
 
 @Component({
   selector: 'app-page',
@@ -14,7 +14,7 @@ export class PageComponent implements OnInit {
 
   ngOnInit() {
     const pageData = this.route.snapshot.data['page'];
-    this.page = this.contentService.pages['pageData'];
+    this.page = this.contentService.pages[pageData];
   }
 
 }
