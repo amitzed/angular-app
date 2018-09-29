@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { PageComponent } from './page/page.component';
+import { ContentService } from './shared/services/content.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { PageComponent } from './page/page.component';
     MatButtonModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
