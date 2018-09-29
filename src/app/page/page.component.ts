@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentService } from '../shared/services/content.service';
 
 @Component({
   selector: 'app-page',
@@ -6,16 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page.component.css']
 })
 export class PageComponent implements OnInit {
-  page = {
-    title: 'Main Page',
-    subtitle: 'Welcome',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'assets/interior1.jpg'
-  };
+  page: Object;
 
-  constructor() { }
+  constructor(private contentService: ContentService) { }
 
   ngOnInit() {
+    this.page = this.contentService.pages['home'];
   }
 
 }
