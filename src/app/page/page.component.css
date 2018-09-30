@@ -17,11 +17,11 @@ mat-card-header {
     font-family: 'Asul', sans-serif;
 }
 mat-card-subtitle {
-    color: #806543;
+    color: #332616;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
-    text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
-    margin: 5px;
+    text-shadow: 5px 2px 20px #CCAA7F;
+    /* margin: 5px; */
 }
 mat-card-content {
     color: #33266E;
