@@ -2,13 +2,6 @@
 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-/* html, body, app-root {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-} */
-
 body {
   margin: 0;
   overflow: hidden;
