@@ -1,0 +1,25 @@
+mat-toolbar {
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
+
+mat-toolbar-row {
+  justify-content:space-between;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a.active {
+  background-color: rgba(0,0,0, 0.3);
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 .light {
+  font-weight: 100;
+}
