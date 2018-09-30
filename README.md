@@ -1,7 +1,27 @@
-# AngularApp
+# [DRAMATIC DESIGNS - Angular App](https://angular-app-az.herokuapp.com/)
 App Created Using Angular 6
+#### Please Click App Name Above to View Heroku Deployment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+<p align="center">
+  <img src="dd3.png" width="650" title="hover text">
+</p>
+
+<p align="center">
+  <img src="dd1.png" width="300" title="hover text">
+  <img src="dd2.png" width="300" title="hover text">
+  <img src="dd4.png" width="300" title="hover text">
+</p>
+
+#### Technologies Used:
+##### ANGULAR 6
+##### Heroku
+
+#### This app has several pages that can be accessed via the navigation bar.  Future upgrades will include a gallery of projects on the "Our Work" page and likely feature Hero Zoom and Parallax effects.
+
+#### To see the app's Heroku deployment, click the iWant name/link above or you can view [here](https://angular-app-az.herokuapp.com/).
+
+##### [Amit](https://amitzaman.com/)
 
 ## Development server
 
@@ -22,7 +42,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
