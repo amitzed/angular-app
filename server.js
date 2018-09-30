@@ -1,29 +1,16 @@
-const path = require('path');
+//Install express server
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
-// Heroku automagically gives us SSL
-// Lets write some middleware to redirect us
-let env = process.env.NODE_ENV || 'development';
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/angular-app'));
 
-let forceSSL = (req, res, next) => {
-  if (req.headers['x-forwarded-proto'] !== 'https') {
-    return res.redirect(['https://', req.get('Host'), req.url].join(''));
-  }
-  return next();
-};
+app.get('/*', function(req,res) {
 
-if (env === 'production') {
-  app.use(forceSSL);
-}
-
-// Serve static files
-app.use(express.static(__dirname + '/dist/angular-app'));
-
-// Send all requests to index.html
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/angular-app/index.html'));
+res.sendFile(path.join(__dirname,'/dist/angular-app/index.html'));
 });
 
-// default Heroku port
-app.listen(process.env.PORT || 5000);
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
