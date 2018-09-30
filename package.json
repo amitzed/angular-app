@@ -1,6 +1,7 @@
 {
   "name": "angular-app",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -33,9 +34,7 @@
     "path": "^0.12.7",
     "rxjs": "~6.2.0",
     "typescript": "^2.9.2",
-    "zone.js": "~0.8.26"
-  },
-  "devDependencies": {
+    "zone.js": "~0.8.26",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -51,6 +50,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0"
   },
+  "devDependencies": {},
   "engines": {
     "node": "10.9.0",
     "npm": "6.2.0"
