@@ -8,6 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
     "heroku-postbuild": "ng build --aot -prod"
   },
   "private": true,
