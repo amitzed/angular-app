@@ -22,4 +22,5 @@ h1 {
 
 h1 .light {
   font-weight: 100;
+  margin: 5px;
 }
