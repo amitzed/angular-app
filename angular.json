@@ -25,9 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "postinstall": "ng build --aot -prod"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
