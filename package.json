@@ -1,14 +1,17 @@
 {
   "name": "angular-app",
   "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "http-server",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build"
+    "preinstall": "npm install -g http-server",
+    "postinstall": "ng build && mv dist/* ."
   },
   "private": true,
   "dependencies": {
@@ -28,10 +31,7 @@
     "core-js": "^2.5.4",
     "express": "4.16.3",
     "rxjs": "~6.2.0",
-    "typescript": "2.9.2",
-    "zone.js": "~0.8.26"
-  },
-  "devDependencies": {
+    "zone.js": "~0.8.26",
     "@angular-devkit/build-angular": "~0.8.0",
     "@angular/language-service": "^6.1.0",
     "@types/jasmine": "~2.8.8",
@@ -50,7 +50,10 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "webpack": "^4.8.3"
+    "webpack": "^4.8.3",
+    "typescript": "2.9.2"
+  },
+  "devDependencies": {
   },
   "engines": {
     "node": "10.9.0",
