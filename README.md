@@ -1,4 +1,4 @@
-# [DRAMATIC DESIGNS - Angular App](https://angular-app-az.herokuapp.com/)
+# DRAMATIC DESIGNS - Angular App
 App Created Using Angular 6
 #### Please Click App Name Above to View Heroku Deployment
 
@@ -19,13 +19,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #### This app has several pages that can be accessed via the navigation bar.  Future upgrades will include a gallery of projects on the "Our Work" page and likely feature Hero Zoom and Parallax effects.
 
-#### To see the app's Heroku deployment, click the iWant name/link above or you can view [here](https://angular-app-az.herokuapp.com/).
+#### Heroku deployment has been unsuccessful and will troubleshoot further on future updates.
 
 ##### [Amit](https://amitzaman.com/)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
